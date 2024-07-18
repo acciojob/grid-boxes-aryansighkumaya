@@ -1,1 +1,69 @@
 /*  your css code here. If applicable */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        "sidebar content1 content2 content2"
+        "sidebar content3 content4 content4"
+        "sidebar content5 content6 content6"
+        "footer footer footer footer";
+    grid-gap: 10px;
+}
+
+.item {
+    background-color: green;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border: 1px solid white;
+}
+
+.item1 {
+    grid-area: header;
+}
+
+.item2 {
+    grid-area: sidebar;
+}
+
+.item3 {
+    grid-area: content1;
+}
+
+.item4 {
+    grid-area: content2;
+}
+
+.item5 {
+    grid-area: content3;
+}
+
+.item6 {
+    grid-area: content4;
+}
+
+.item7 {
+    grid-area: content5;
+}
+
+.item8 {
+    grid-area: content6;
+}
+
+.item9 {
+    grid-area: content6;
+}
+
+.item10 {
+    grid-area: footer;
+}
